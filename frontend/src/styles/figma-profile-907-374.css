@@ -1,0 +1,100 @@
+/* Scoped root wrapper */
+.profile-root * { box-sizing: border-box; }
+.profile-root img { display: block; max-width: 100%; }
+
+:root {
+  --color-f8f9fa: #f8f9fa;
+  --color-ffffff: #ffffff;
+  --color-323f4b: #323f4b;
+  --color-dadada: #dadada;
+  --color-000000: #000000;
+  --color-4cd964: #4cd964;
+  --color-9aa5b1: #9aa5b1;
+  --color-2bb0ed: #2bb0ed;
+  --color-e4e7eb: #e4e7eb;
+  --color-c4c4c4: #c4c4c4;
+  --color-56bd66: #56bd66;
+  --shadow-0: 0px 8px 20px 0px #1d3a58;
+  --font-lato: "Lato", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+}
+
+.profile-root { background: var(--color-f8f9fa); color: var(--color-323f4b); }
+
+.screen.profile-907-374 {
+  position: relative;
+  width: 375px;
+  height: 998px;
+  background: var(--color-f8f9fa);
+  overflow: hidden;
+  font-family: var(--font-lato);
+}
+
+.frame, .status-bar, .top-bar, .top-content, .down-bar,
+.bottom-nav, .home-indicator-wrap, .profile-row, .graph,
+.row-line, .row-left, .row-right { position: absolute; }
+
+.text { font-family: var(--font-lato); }
+
+.status-bar { background: var(--color-ffffff); z-index: 10; }
+.status-time .time-typo { font-size: 14px; font-weight: 700; line-height: 20px; color: var(--color-323f4b); }
+.status-symbols .icon-signal::before,
+.status-symbols .icon-wifi::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-000000);
+  opacity: 0.6;
+  border-radius: 2px;
+}
+
+.top-bar { background: var(--color-ffffff); z-index: 20; }
+.icon-btn .img { width: 100%; height: 100%; object-fit: contain; }
+.title-20 { font-size: 20px; line-height: 30px; font-weight: 700; color: var(--color-323f4b); }
+
+.cover { object-fit: cover; width: 100%; height: 100%; }
+.radius-8 { border-radius: 8px; overflow: hidden; }
+.radius-12 { border-radius: 12px; overflow: hidden; }
+.radius-100 { border-radius: 100px; overflow: hidden; }
+
+.avatar-outer { position: absolute; border: 2.5px solid var(--color-e4e7eb); border-radius: 100px; overflow: hidden; }
+
+.name-24 { font-size: 24px; line-height: 32px; font-weight: 700; color: var(--color-323f4b); }
+.id-role { font-size: 12px; line-height: 18px; font-weight: 500; color: var(--color-9aa5b1); }
+
+.badge-outline { border: 1px solid var(--color-56bd66); border-radius: 12px; position: absolute; }
+.badge-text-left { font-size: 12px; line-height: 18px; font-weight: 500; color: var(--color-56bd66); position: absolute; }
+
+.card-overview { position: absolute; background: var(--color-ffffff); border-radius: 8px; }
+.overview-title { font-size: 14px; line-height: 20px; font-weight: 700; color: var(--color-323f4b); }
+
+.badge-right { position: absolute; }
+.badge-right-bg { position: absolute; inset: 0; background: var(--color-323f4b); border-radius: 12px; }
+.this-week { position: absolute; font-size: 12px; line-height: 18px; font-weight: 500; color: var(--color-ffffff); }
+
+.graph { position: absolute; }
+.bar-base { background: var(--color-323f4b); opacity: 0.2; border-radius: 2px; position: absolute; }
+.bar-active { background: transparent; border-radius: 2px; position: absolute; overflow: hidden; }
+.bar-label { font-family: Rubik, var(--font-lato), sans-serif; font-size: 10px; line-height: 12px; font-weight: 400; letter-spacing: 0.4px; text-align: center; color: var(--color-323f4b); position: absolute; }
+.bar-label-dark { font-family: Rubik, var(--font-lato), sans-serif; font-size: 10px; line-height: 12px; font-weight: 400; letter-spacing: 0.4px; text-align: center; color: var(--color-323f4b); position: absolute; }
+
+.metric { position: absolute; font-size: 18px; line-height: 28px; font-weight: 700; color: var(--color-323f4b); letter-spacing: 0; }
+.metric-sub { position: absolute; font-size: 12px; line-height: 18px; font-weight: 400; color: var(--color-323f4b); opacity: 0.9; letter-spacing: 0.2px; }
+
+.row-item.tax { background: var(--color-ffffff); border: 1px solid var(--color-56bd66); border-radius: 8px; position: absolute; }
+.tax-icon { position: absolute; }
+.tax-icon-bg { position: absolute; inset: 0; background: var(--color-56bd66); border-radius: 15px; }
+.tax-title { position: absolute; font-size: 18px; line-height: 28px; font-weight: 700; color: var(--color-323f4b); }
+.tax-sub { position: absolute; font-size: 12px; line-height: 18px; font-weight: 400; color: var(--color-56bd66); }
+
+.row-line { background: var(--color-ffffff); border: 1px solid var(--color-e4e7eb); }
+.row-title { font-size: 16px; line-height: 24px; font-weight: 500; color: var(--color-323f4b); }
+.row-value { font-size: 16px; line-height: 24px; font-weight: 500; color: var(--color-9aa5b1); }
+
+.nav-label { position: absolute; text-align: center; font-size: 12px; line-height: 18px; font-weight: 400; color: var(--color-9aa5b1); }
+.nav-label-active { position: absolute; text-align: center; font-size: 12px; line-height: 18px; font-weight: 700; color: var(--color-56bd66); }
+.down-bar { background: var(--color-ffffff); }
+
+.home-indicator { position: absolute; background: var(--color-323f4b); border-radius: 100px; }
+
+.col { position: absolute; display: flex; flex-direction: column; }
+.img.abs { position: absolute; }

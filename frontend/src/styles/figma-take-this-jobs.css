@@ -1,0 +1,140 @@
+/* Scoped root to avoid global leaks */
+.take-this-jobs-root * { box-sizing: border-box; }
+.take-this-jobs-root img { display: block; max-width: 100%; }
+
+/* Begin original content from assets/figma-take-this-jobs.css, with top-level selectors unchanged but usage wrapped in .take-this-jobs-root container where applicable */
+:root {
+  --color-f8f9fa: #f8f9fa;
+  --color-ffffff: #ffffff;
+  --color-323f4b: #323f4b;
+  --color-dadada: #dadada;
+  --color-000000: #000000;
+  --color-4cd964: #4cd964;
+  --color-9aa5b1: #9aa5b1;
+  --color-2bb0ed: #2bb0ed;
+  --color-e4e7eb: #e4e7eb;
+  --color-c4c4c4: #c4c4c4;
+  --color-56bd66: #56bd66;
+  --shadow-0: 0px 8px 20px 0px #1d3a58;
+  --font-family-lato: "Lato", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+}
+
+/* Reset minimal */
+.take-this-jobs-root { background: var(--color-f8f9fa); color: var(--color-323f4b); }
+
+/* Root screen */
+.screen.take-this-jobs-907-315 {
+  position: relative;
+  width: 375px;
+  height: 812px;
+  background: var(--color-f8f9fa);
+  overflow: hidden;
+  font-family: var(--font-family-lato);
+}
+
+/* Absolute positioning helper */
+.frame, .status-bar, .top-bar, .content, .card, .row, .col,
+.bottom-cta, .overlay, .modal, .modal-content, .illustration,
+.desc, .actions, .icon-btn, .status-symbols {
+  position: absolute;
+}
+
+.text { font-family: var(--font-family-lato); }
+
+/* Status bar */
+.status-bar { background: var(--color-ffffff); z-index: 10; }
+.status-time .time-typo { font-size: 14px; font-weight: 700; line-height: 20px; color: var(--color-323f4b); }
+.status-symbols .icon-battery { position: absolute; }
+.status-symbols .icon-signal, .status-symbols .icon-wifi { position: absolute; }
+.status-symbols .icon-signal::before,
+.status-symbols .icon-wifi::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-000000);
+  opacity: 0.6;
+  border-radius: 2px;
+}
+
+/* Top bar */
+.top-bar { background: var(--color-ffffff); z-index: 20; }
+.icon-btn .img { width: 100%; height: 100%; object-fit: contain; }
+.topbar-center .header-title { font-size: 18px; line-height: 28px; font-weight: 700; color: var(--color-323f4b); text-align: center; }
+.topbar-center .header-sub { font-size: 12px; line-height: 18px; font-weight: 500; color: var(--color-9aa5b1); text-align: center; }
+
+/* Content */
+.content { z-index: 1; }
+
+/* Cards/Sections */
+.card { background: var(--color-ffffff); }
+
+/* Badges */
+.badges { position: relative; }
+.badge { position: absolute; border-radius: 12px; height: 22px; display: flex; align-items: center; }
+.badge.time { background: var(--color-323f4b); }
+.badge.word { background: #2bb0ed; }
+.badge-icon { position: absolute; }
+.badge-text { position: absolute; font-size: 12px; line-height: 18px; font-weight: 500; color: var(--color-ffffff); }
+.badge-word-text { position: absolute; left: 8px; top: 2px; font-size: 12px; line-height: 18px; font-weight: 500; color: var(--color-2bb0ed); }
+
+/* Titles and text */
+.title-20 { font-size: 20px; line-height: 30px; font-weight: 700; color: var(--color-323f4b); }
+.text.date, .text.note { font-size: 14px; line-height: 20px; font-weight: 500; color: var(--color-323f4b); }
+.text.location { font-size: 12px; line-height: 18px; font-weight: 400; color: var(--color-323f4b); }
+
+/* Chip outline */
+.chip-outline { border: 1px solid var(--color-e4e7eb); }
+.pill { border-radius: 100px; }
+
+/* Avatars */
+.avatar { position: absolute; border: 1px solid var(--color-ffffff); background: var(--color-c4c4c4); border-radius: 50%; }
+.avatar-img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+
+/* Section subtitles */
+.text.section-sub { font-size: 16px; line-height: 24px; font-weight: 500; color: var(--color-9aa5b1); }
+
+/* Radius helpers */
+.radius-8 { border-radius: 8px; overflow: hidden; }
+.radius-12 { border-radius: 12px; }
+.radius-100 { border-radius: 100px; overflow: hidden; }
+.cover { object-fit: cover; width: 100%; height: 100%; }
+.contain { object-fit: contain; width: 100%; height: 100%; }
+
+/* Pin */
+.pin-24 { position: absolute; }
+
+/* Links success */
+.link-success { font-size: 16px; line-height: 24px; font-weight: 500; color: var(--color-56bd66); }
+
+/* People text */
+.text.people-ttl { font-size: 16px; line-height: 24px; font-weight: 700; color: var(--color-323f4b); }
+.text.people-sub { font-size: 12px; line-height: 18px; font-weight: 500; color: var(--color-9aa5b1); }
+
+.profile-img { position: absolute; border: 1.5px solid var(--color-e4e7eb); border-radius: 100px; overflow: hidden; }
+.profile-img .bordered { border: 1.5px solid transparent; }
+.text.person-name { font-size: 16px; line-height: 24px; font-weight: 700; color: var(--color-323f4b); }
+.text.person-id { font-size: 12px; line-height: 18px; font-weight: 500; color: var(--color-9aa5b1); }
+
+/* Bottom CTA */
+.btn-primary { position: absolute; background: var(--color-323f4b); display: flex; align-items: center; justify-content: center; border: none; }
+.btn-primary.shadow { box-shadow: var(--shadow-0); }
+.btn-primary .btn-text { font-size: 16px; line-height: 24px; font-weight: 700; letter-spacing: 0.32px; color: var(--color-ffffff); text-align: center; }
+
+.home-indicator { position: absolute; background: var(--color-323f4b); border-radius: 100px; opacity: 1; }
+
+/* Overlay and Modal */
+.overlay { position: absolute; background: var(--color-323f4b); opacity: 0.7; z-index: 90; }
+.modal.approval { position: absolute; background: var(--color-ffffff); border-radius: 12px; box-shadow: var(--shadow-0); z-index: 100; }
+.text.modal-title { font-size: 20px; line-height: 30px; font-weight: 700; color: var(--color-323f4b); text-align: center; }
+.text.modal-sub { font-size: 16px; line-height: 24px; font-weight: 400; color: var(--color-323f4b); text-align: center; }
+
+.btn-white { position: absolute; background: var(--color-ffffff); border-radius: 8px; border: 1px solid transparent; display: flex; align-items: center; justify-content: center; }
+.btn-text-alt { font-size: 16px; line-height: 24px; font-weight: 700; letter-spacing: 0.32px; color: var(--color-323f4b); text-align: center; }
+
+/* Utilities */
+.row { display: flex; flex-direction: row; align-items: center; }
+.col { position: absolute; display: flex; flex-direction: column; }
+.center { text-align: center; }
+.img.abs { position: absolute; }
+.top { z-index: 5; }
+.bottom-cta { z-index: 50; }
